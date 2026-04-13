@@ -7,6 +7,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .success-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: white;
+            border: 2px solid green;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .check-mark {
+            color: green;
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
 </head>
 
 
@@ -42,6 +76,11 @@
 
         <button type="submit">Submit Application</button>
     </form>
+
+    <div id="success-message" class="success-box" style="display: none;">
+        <div class="check-mark">✓</div>
+        <div class="message">تم ارسال طلب بنجاح مع تحياتي م/ عبدالله احمد الشاعر مهاوش</div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
