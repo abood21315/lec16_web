@@ -7,79 +7,52 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f0f0;
-        }
-
-        .success-box {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: white;
-            border: 2px solid green;
-            padding: 40px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .check-mark {
-            color: green;
-            font-size: 80px;
-            margin-bottom: 20px;
-        }
-
-        .message {
-            font-size: 24px;
-            color: #333;
-        }
-    </style>
 </head>
 
 
 <body>
 
+    <div id="success-message" class="success-message">
+        <i class="fas fa-check-circle"></i>
+        تم إرسال طلبك بنجاح!
+    </div>
+
     <form action="">
-        <h1>Web Developer Application ABOOD ALSAHIER</h1>
+        <h1>Web Developer Application abood alsheir </h1>
 
         <div>
             <label for="name">Full Name</label>
-            <input id="name" type="text" placeholder="Your full name" required>
+            <input id="name" type="text" placeholder="NAME >
         </div>
 
         <div>
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="you@example.com" required>
+            <label for=" email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com">
         </div>
-
         <div>
             <label for="skills">Key Skills</label>
-            <input id="skills" type="text" placeholder="HTML, CSS, JavaScript, React..." required>
+            <input id="skills" type="text" placeholder="HTML, CSS, JavaScript, React...">
         </div>
 
         <div>
             <label for="experience">Years of Experience</label>
-            <input id="experience" type="number" min="0" placeholder="e.g. 2" required>
+            <input id="experience" type="number" min="0" placeholder="e.g. 2,3,5...">
         </div>
 
         <div>
             <label for="message">Why are you a good fit?</label>
-            <textarea id="message" rows="4" placeholder="Tell us about your experience and goals" required></textarea>
+            <textarea id="message" rows="4" placeholder="Tell us about your experience and goals"></textarea>
         </div>
 
         <button type="submit">Submit Application</button>
     </form>
 
-    <div id="success-message" class="success-box" style="display: none;">
-        <div class="check-mark">✓</div>
-        <div class="message">تم ارسال طلب بنجاح مع تحياتي م/ عبدالله احمد الشاعر مهاوش</div>
+    <div id="thank-you-page" class="thank-you-page">
+        <div class="thank-you-box">
+            <i class="fas fa-check-circle"></i>
+            <h2>شكراً على تقديم الطلب</h2>
+            <p>مع تحياتي المهندس عبدالله أحمد الشاعر</p>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
